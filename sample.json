@@ -1,5 +1,6 @@
 {
-    "fruit": "Apple",
-    "size": "Large",
-    "color": "Red"
-} 
+  "firstname": "John",
+  "lastname": "Doe",
+  "age": 25,
+  "process": "${process}"
+}

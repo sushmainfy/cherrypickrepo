@@ -1,6 +1,4 @@
 {
-  "firstname": "John",
-  "lastname": "Doe",
-  "age": 25,
-  "process": "${process}"
+  "processname": $processname
 }
+

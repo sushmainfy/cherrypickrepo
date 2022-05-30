@@ -1,5 +1,5 @@
 param(
-[string]$a
+[string]$processname
 )
 
-Write-Host $a
+Write-Host $processname

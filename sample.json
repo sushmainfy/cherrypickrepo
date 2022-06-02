@@ -1,8 +1,5 @@
-
-cat > sample.json << EOF
-
 {
-  "type": $type,
+  "version": $version,
   "project_id": $project_id,
   "private_key":$private_key,
   "client_email":$client_email,
@@ -10,6 +7,3 @@ cat > sample.json << EOF
   "auth_uri":$auth_uri,
   "token_uri":$token_uri
 }
-
-
-EOF

@@ -1,3 +1,18 @@
-def data = readJSON text: '{}'
-data.a = "test: ${myVar}"
-writeJSON(file: 'message1.json', json: data, pretty: 4)
+pipeline{
+    agent any
+    stages {
+            stage("Step 3: Production Deployment"){
+    	   when  {
+        	            allOf {
+            		   expression { env.BRANCH_NAME == "origin/master" }
+            		   expression { params.merged == true }
+            	                   expression { params.current_status == "closed" }
+
+		}
+	    }
+
+            
+        }
+
+        }
+

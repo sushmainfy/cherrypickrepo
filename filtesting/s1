@@ -1,0 +1,4 @@
+#!/bin/bash
+path="/USER/Desktop/test/cherrypickrepo/filtesting/filetesting"
+delimiter=(${path//'/'/ })
+echo dirname= ${delimiter[3]} 

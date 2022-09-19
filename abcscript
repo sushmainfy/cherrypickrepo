@@ -1,0 +1,7 @@
+
+file="/c/Users/USER/Desktop/sept/cherrypickrepo/mflist"
+
+while read -r line; do
+    git checkout newone $line
+    git commit -m "Added files to main branch"
+done <$file 
